@@ -1,0 +1,29 @@
+.Admin {
+    overflow: hidden;
+    margin-left: -15px;
+}
+
+.sidebar-container {
+    height: 100vh;
+}
+
+.Sidebar {
+    background-color: var(--main-color);
+    height: 100%;
+}
+
+.Sidebar ul {
+    padding-top: 100px;
+}
+
+.Sidebar .nav-item:hover {
+    background-color: #0f6f0f;
+}
+
+.Sidebar .nav-link {
+    color: #ffffff;
+}
+
+.Form {
+    margin-top: 100px;
+}

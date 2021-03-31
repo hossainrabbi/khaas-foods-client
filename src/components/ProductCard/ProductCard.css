@@ -1,0 +1,23 @@
+.Card {
+    border-radius: 0;
+    border: none;
+    box-shadow: 10px 10px 30px #44444421;
+}
+
+.Card .card-img {
+    height: 300px;
+    text-align: center;
+}
+
+.Card .card-img img {
+    border-radius: 0;
+    width: auto;
+    min-height: 100%;
+}
+
+.Card .card-footer {
+    padding: 0;
+    background-color: transparent;
+    border-top: none;
+    border-radius: 0;
+}
