@@ -10,10 +10,12 @@ const Home = () => {
 
     useEffect(() => {
         setLoading(true);
-        axios.get('http://localhost:8000/foods').then((res) => {
-            setProducts(res.data);
-            setLoading(false);
-        });
+        axios
+            .get('https://apple-crumble-97925.herokuapp.com/foods')
+            .then((res) => {
+                setProducts(res.data);
+                setLoading(false);
+            });
     }, []);
 
     if (loading) {

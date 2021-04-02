@@ -14,7 +14,9 @@ const Orders = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get(`http://localhost:8000/buyData?email=${loggedInUser.email}`)
+            .get(
+                `https://apple-crumble-97925.herokuapp.com/buyData?email=${loggedInUser.email}`
+            )
             .then((res) => {
                 setProducts(res.data);
                 setLoading(false);

@@ -15,10 +15,12 @@ const Checkout = () => {
 
     useEffect(() => {
         setLoading(true);
-        axios.get('http://localhost:8000/foods').then((res) => {
-            setProducts(res.data);
-            setLoading(false);
-        });
+        axios
+            .get('https://apple-crumble-97925.herokuapp.com/foods')
+            .then((res) => {
+                setProducts(res.data);
+                setLoading(false);
+            });
     }, []);
 
     const buyProduct = products.find((product) => product._id === id);
@@ -33,7 +35,10 @@ const Checkout = () => {
 
     const handleClick = () => {
         axios
-            .post('http://localhost:8000/addBuyData', buyData)
+            .post(
+                'https://apple-crumble-97925.herokuapp.com/addBuyData',
+                buyData
+            )
             .then(() => setAlertShow(true));
     };
 

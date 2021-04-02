@@ -19,7 +19,7 @@ const AddProduct = () => {
         };
 
         axios
-            .post('http://localhost:8000/addFood', foodData)
+            .post('https://apple-crumble-97925.herokuapp.com/addFood', foodData)
             .then(() => setAlertShow(true));
     };
 
