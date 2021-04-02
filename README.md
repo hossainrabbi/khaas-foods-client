@@ -8,3 +8,5 @@ This is a foods website build by React & NodeJS. Here are some private routes. Y
 -   Going to the order page will show the ordered data.
 -   Products can be added from the Add Product of the admin page.
 -   Home page product can be deleted from Manage Product.
+
+### Khaas Foods: [Live Link](https://khaas-foods-123.web.app/)
