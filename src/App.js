@@ -1,9 +1,11 @@
 import React, { createContext, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Admin from './components/Admin/Admin';
+import Checkout from './components/Checkout/Checkout';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import NavManu from './components/NavManu/NavManu';
+import NotFound from './components/NotFound/NotFound';
 import Orders from './components/Orders/Orders';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
@@ -23,11 +25,17 @@ const App = () => {
                     <PrivateRoute exact path="/admin">
                         <Admin />
                     </PrivateRoute>
-                    <Route exact path="/orders">
+                    <PrivateRoute exact path="/checkout/:id">
+                        <Checkout />
+                    </PrivateRoute>
+                    <PrivateRoute exact path="/orders">
                         <Orders />
-                    </Route>
+                    </PrivateRoute>
                     <Route exact path="/login">
                         <Login />
+                    </Route>
+                    <Route path="*">
+                        <NotFound />
                     </Route>
                 </Switch>
             </Router>

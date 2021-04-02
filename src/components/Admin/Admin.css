@@ -4,7 +4,7 @@
 }
 
 .sidebar-container {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .Sidebar {
@@ -24,6 +24,20 @@
     color: #ffffff;
 }
 
-.Form {
-    margin-top: 100px;
+.Manage-product .icon {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .Admin {
+        margin-left: auto;
+    }
+    .Sidebar ul {
+        padding-top: 60px;
+    }
+    .sidebar-container {
+        min-height: 250px;
+    }
 }
